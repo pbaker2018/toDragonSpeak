@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">To Dragon Speak</string>
+    <string name="input_phrase">type your phrase here</string>
+    <string name="translateBtn">Translate</string>
+</resources>
