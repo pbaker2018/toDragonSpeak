@@ -10,6 +10,16 @@ Dragon Speak is when the vowels are replaced by special characters:
  * U/u is replaced with |_|
  
  So the phrase: "I love apple crumble!" would translate to "1 l0v3 4ppl3 cr|_|mbl3!"
+ 
+ 
+ ## Screen Recording of App
+ 
+ See the link below to view a screen recording of my app in action, on Youtube.
+ 
+ ```
+ https://youtu.be/UvwU3HoMlaI
+ 
+ ```
 
 
 
