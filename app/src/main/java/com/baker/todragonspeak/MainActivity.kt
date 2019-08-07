@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.*
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -31,10 +32,20 @@ class MainActivity : AppCompatActivity() {
                     else -> it.value
                 }
             }
+            resultTitleTxt.text = "⬇ Dragon Speak RESULT ⬇"
             resultText.text = editedPhrase.toString()
 
         } else {
-            resultText.text = "No phrase given"
+            Toast.makeText(this@MainActivity, "No phrase has been entered", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    fun clearResult(view: View) {
+        if (resultText.text.isNotEmpty()) {
+            resultTitleTxt.text = " "
+            resultText.text = " "
+        } else {
+            Toast.makeText(this@MainActivity, "There is nothing to clear", Toast.LENGTH_SHORT).show()
         }
     }
 }
